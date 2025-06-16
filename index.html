@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Employee Nomination</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>Nominate Employee of the Month</h2>
+
+    <div id="login-section">
+      <input type="text" id="employee-id" placeholder="Enter your Employee ID" />
+      <button onclick="login()">Login</button>
+    </div>
+
+    <div id="confirm-section" class="hidden">
+      <p><strong>Name:</strong> <span id="employee-name"></span></p>
+      <p><strong>Department:</strong> <span id="employee-department"></span></p>
+      <button onclick="confirmDetails()">Confirm</button>
+    </div>
+
+    <div id="nominate-section" class="hidden">
+      <label for="nominee">Select Nominee:</label>
+      <select id="nominee">
+        <option value="">-- Select --</option>
+      </select>
+      <button onclick="submitNomination()">Confirm & Nominate</button>
+    </div>
+
+    <p id="message" class="message"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
